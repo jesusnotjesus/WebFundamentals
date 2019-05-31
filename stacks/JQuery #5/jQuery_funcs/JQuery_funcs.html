@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jquery_funcs_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>JQuery Functions Assignment</title>
+
+    <script>
+        $(document).ready(function() {
+            /* addClass Button */
+            $('#addClassbutton').click(function(){
+                $('#red_par').addClass('red_text');
+            })
+            /* addClass Button */
+
+
+
+            /* slide toggle */
+            $('#slideToggleButton').click(function() {
+                $('#toggle_par').slideToggle();
+            })
+            /* slide toggle */
+
+
+
+            /* append */
+            $('#append_button').click(function() {
+                $('#append_par').append("<p> I HAVE BEEN APPENDED!</p>");
+            })
+            /* append */
+
+
+
+            /* fade in */
+            $('#fade_in_button').click(function(){
+                $('#book').fadeIn("slow");
+            })
+            /* fade in */
+
+
+            /* fade out */
+            $('#fade_out_button').click(function(){
+                $('#book1').fadeOut("slow");
+            })
+            /* fade out */
+
+            /* before */
+            $('#before_button').click(function(){
+                $('#before_par').before("<b> BEFORE INSERTED</b>");
+            })
+            /* before */
+
+            /* after */
+            $('#after_button').click(function(){
+                $('#after_par').after("<b>AFTER INSERTED</b>");
+            })
+            /* after */
+            $('#toggle_button').click(function(){
+                $('#toggle_par1').toggle();
+            })
+
+            /* show */
+            $('#show_button').click(function(){
+                $('#show_par').show();
+            })
+            /* show */
+
+            /* hide */
+            $('#hide_button').click(function(){
+                $('#hide_par').hide();
+            })
+
+            /* slide up */
+            $('#su_button').click(function(){
+                $('#su_par').slideUp();
+            })
+
+            /* slide down */
+            $('#sd_button').click(function(){
+                $('#sd_par').slideDown();
+            })
+
+            /* html */
+            $('#html_button').click(function(){
+                $('.html_stuff').html("<b> HTML IS ADDED</b>");
+            })
+
+            /* attr & text */
+            $('#attr_button').click(function(){
+                var title = $('#em_attr').attr("title");
+                $('#attr_ouput').text(title);
+            })
+
+            /* val */
+            $('#val_button').click(function(){
+                var my_val = $('#val_input').val();
+                $('#val_output').text(my_val);
+            })
+
+
+        });
+    </script>
+
+</head>
+<body>
+    <div class="main_container">
+        <!-- This will house all of my other blocks-->
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="addClassbutton" class="action_butt" type="button">AddClass</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">AddClass</p></li>
+                <li><p id="red_par">Click the button to add class "red" to this paragraph</p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="slideToggleButton" class="action_butt" type="button">Slidetoggle</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Sildetoggle</p></li>
+                <li><p id="toggle_par">Click the button to slide toggle a hidden image</p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="append_button"class="action_butt" type="button">Append</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Append</p></li>
+                <li><p id="append_par">Click the button to append a new paragraph</p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="fade_in_button" class="action_butt" type="button">Fade in</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Fade in</p></li>
+                <li><img hidden id="book" src="book.jpeg" alt="" width="50" height="50"></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="fade_out_button" class="action_butt" type="button">Fade out</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Fade out</p></li>
+                <li><img id="book1" src="book.jpeg" alt="" width="50" height="50"></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="before_button" class="action_butt" type="button">Before</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Before</p></li>
+                <li><p id="before_par">Click the button to place a statement before the paragraph</p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="after_button" class="action_butt" type="button">After</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">After</p></li>
+                <li><p id="after_par">Click the button to place a statement after the paragraph</p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="toggle_button" class="action_butt" type="button">Toggle</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Toggle</p></li>
+                <li><p id="toggle_par1">Click the button to toggle paragraph</p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="show_button" class="action_butt" type="button">Show</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Show</p></li>
+                <li><p hidden id="show_par">Click the button to </p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="hide_button" class="action_butt" type="button">Hide</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Hide</p></li>
+                <li><p id="hide_par">Click the button to </p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="html_button" class="action_butt" type="button">HTML</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">HTML</p></li>
+                <li><p class="small_par">Click the button to append a new paragraph</p></li>
+                <div class="html_stuff"></div>
+                <div></div>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="attr_button" class="action_butt" type="button">Attribute</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Attribute</p></li>
+                <li><p id="attr_par">Click the button to give the attribute output: <em id="em_attr" title="THIS IS ATTR"></em></p></li>
+                <li><p id="attr_ouput"></p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="val_button" class="action_butt" type="button">Value</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Value</p></li>
+                <li><p class="small_par">Click the button to append a new paragraph</p></li>
+                <li><input id = "val_input" type="text" value="some text"></li>
+                <li><p id="val_output"></p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="su_button" class="action_butt" type="button">Slide Up</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Slide Up</p></li>
+                <li><p id="su_par">Click the button to append a new paragraph</p></li>
+            </ul>
+        </div>
+
+        <div class="hold_block">
+            <!-- This will hold all of my addClass functions-->
+            <button id="sd_button" class="action_butt" type="button">Slide Down</button>
+
+            <ul class="action_list">
+                <li><p class="big_title">Slide Down</p></li>
+                <li><p hidden id="sd_par">Click the button to append a new paragraph</p></li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>

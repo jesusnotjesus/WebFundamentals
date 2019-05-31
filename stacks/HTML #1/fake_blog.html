@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- This is control of the head information -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This blog was created by Jesus Ramos">
+        <title> My Blog Post </title>
+    </head>
+
+    <!-- This Division is in control of: Introduction to Blog being - name, desciption, and picture-->
+    <div>
+        <body>
+            <h1> Jesus Ramos </h1>
+            <img src="self_pic/jesus.jpg" alt="This a picture of me for the blog post" height="200px" width="200px">
+            <p> Hello, my name is Jesus Ramos and I am a computer engineering student at
+                Texas A&M University. I love to learn and am usually pretty quiet. However,
+                the years at University have sort of broken me out of that state and really enjoy
+                helping people and making new friends wherever I can.
+            </p>
+        </body>
+    </div>
+
+    <!-- This Division is in control of: Lists of hobbies/interests -->
+    <div>
+        <h4> Down below are a couple of lists that describe my interests and hobbies: </h4>
+        <ui>
+            <li> SkateBoarding </li>
+            <li> Playing Videogames </li>
+            <li> Church </li>
+            <li> Learning </li>
+            <li> Music </li>
+        </ui>
+
+        <!-- This Is just for the link to Apple's website -->
+        <p> Also, when I'm done with school/coding dojo, my dream job would be to work for: </p>
+        <a href="https://www.Apple.com"> This link will tell you where I'd like to work! </a>
+    </div>
+
+    <!-- This Division is in control of: The table setup for Colors, VG, and TV Shows -->
+    <div>
+        <h4> Down below is a table of some of my favorites: </h4>
+        <table>
+            <thead>
+                <tr>
+                    <th> Colors: </th>
+                    <th> VideoGames: </th>
+                    <th> TV Shows: </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Grey </td>
+                    <td> Fortnite </td>
+                    <td> Parks and Rec. </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> White </td>
+                    <td> Super Smash Bros. </td>
+                    <td> Black Mirror  </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> Black </td>
+                    <td> Horizon Zero Dawn </td>
+                    <td> Spongebob </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- This Division is in control of: beginnging of survey and Name entry-->
+    <div>
+        <h4> Before you leave, would you mind filling out this survey please? </h4>        
+        <label for="name"> What is your full name? </label>
+        <input type="text" id="name" name="name">
+    </div>
+
+    <!-- This Division is in control of: Color Selction Question -->
+    <div>
+        <form action="">
+            <label for="color"> What color do you like the most out of these three? </label>
+            <select name="color">
+                <option name="color" value="white"> white </option>
+                <option name="color" value="black"> black </option>
+                <option name="color" value="grey"> grey </option>
+            </select>
+        </form>
+    </div>
+
+    <!-- This Division is in control of: Male/Female Question -->
+    <div>
+        <p> Which of the following are you? </p>
+        <label for="male"> Male </label>
+        <input type="radio" id="male" name="gender" value="male">
+        <labels for="female"> Female </labels>
+        <input type="radio" id="female" name="gender" value="female">
+    </div>
+
+    <!-- This Division is in control of: The videogame checkbox -->
+    <div>
+        <p> Do you play any of the following videogames? Check all that apply: </p>
+        <label for="fortnite">Fortnite</label>
+        <input type="checkbox" id="fortnite" name="game" value="fortnite">
+        <br>
+        <label for="supersmash"> Super Smash Bros. </label>
+        <input type="checkbox" id="supersmash" name="game" value="supersmash">
+        <br>
+        <label for="horizon"> Horizon Zero Dawn </label>
+        <input type="checkbox" id="horizon" name="game" value="horizon">
+    </div>
+    <br>
+
+    <!-- This Division is in control of: The submission Button -->
+    <input type="submit" value="Please submit before leaving!">
+</html>

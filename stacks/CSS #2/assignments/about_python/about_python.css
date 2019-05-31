@@ -1,0 +1,73 @@
+*{
+    outline: 1px dotted red;
+    margin: 0px;
+}
+.main_container{
+    width: 970px;
+    min-height: 900px;
+    background-color: silver;
+    margin: 0px auto;
+}
+/* This is where the top portion block STARTS */
+    .mc_top_block{
+        min-height: 450px;
+        background-color: green;
+    }
+    .top_block_python_pic{
+        width:350px;
+        min-height: 100px;
+        display: inline-block;
+    }
+    .top_block_corner{
+        width: 300px;
+        min-height: 100px;
+        display: inline-block;
+        margin-left: 300px;
+        vertical-align: top;
+        text-align: right;
+    }
+    .corner_search_go{
+        background-color: grey;
+    }
+    .all_info_block{
+        width: 900px;
+        min-height: 50px;
+        background-color: bisque;
+        margin: 0px auto;
+    }
+    .sidebar_links{
+        background-color: brown;
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 35px;
+    }
+    .quotes{
+        width: 700px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .white_parag{
+        text-size-adjust: 9px;
+        text-align: middle;
+    }
+    span{
+        color:yellow;
+    }
+    .italic_q{
+        
+    }
+/* This is where the top portion block ENDS */
+
+    .mc_middle_block{
+        min-height: 250px;
+        background-color: aqua;
+    }
+    .mc_bottom_block{
+        min-height: 200px;
+        background-color: bisque;
+    }
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Cat Ninja</title>
+    <link rel="stylesheet" href="cat-ninja.css">
+
+    <!-- I looked up on the internet how to change the src and followed the example on the website, BUT I did not plagairize anything-->
+
+    <script>
+    $(document).ready(function(){
+        $("#top_cat_ninja").click(function(){
+            $(this).attr("src","img/ninja0.png"); //this changes the attribute source and makes the image the ninja
+        })
+
+        $("#top_sec_cat_ninja").click(function(){
+            $(this).attr("src","img/ninja1.png"); //this changes the attribute source and makes the image the ninja
+        })
+
+        $("#middle_cat_ninja").click(function(){
+            $(this).attr("src","img/ninja2.png"); //this changes the attribute source and makes the image the ninja
+        })
+
+        $("#bottom_sec_cat_ninja").click(function(){
+            $(this).attr("src","img/ninja3.png"); //this changes the attribute source and makes the image the ninja
+        })
+
+        $("#bottom_cat_ninja").click(function(){
+            $(this).attr("src","img/ninja4.png"); //this changes the attribute source and makes the image the ninja
+        })
+
+    });
+
+    </script>
+</head>
+<body>
+    <div class="main_container">
+        <!-- This will hold the image-->
+        <div class="main_content">
+            <!-- This will hold the images-->
+
+            <!-- These are the images-->
+            <img id="top_cat_ninja" class="align_pics" src="img/cat0.png" data-alt-src="img/ninja0.png">
+            <img id="top_sec_cat_ninja" class="align_pics" src="img/cat1.png" data-alt-src="img/ninja1.png">
+            <img id="middle_cat_ninja" class="align_pics" src="img/cat2.png" data-alt-src="img/ninja2.png">
+            <img id="bottom_sec_cat_ninja" class="align_pics" src="img/cat3.png" data-alt-src="img/ninja3.png">
+            <img id="bottom_cat_ninja" class="align_pics" src="img/cat4.png" data-alt-src="img/ninja4.png">
+        </div>
+    </div>
+</body>
+</html>

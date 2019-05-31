@@ -1,0 +1,86 @@
+/* Container that holds all pieices together */
+#container{
+    width: 970px;
+    background-color: navy;
+    margin: 10px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+/* applies to all text pieces that are supposed to be colored blue */
+.light_blue_text{
+    color: lightblue;
+}
+
+/* applies to all text pieces that are supposed to be colored silver */
+.silver_text{
+    color: silver;
+}
+
+/* Span */
+span {
+    color: purple;
+}
+/* Top Header Piece */
+#head{
+    width: 915px;
+    height: 50px;
+    background-color: red;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 7px;
+}
+
+/* Side Bar Piece */
+#sidebar{
+    width: 150px;
+    height: 285px;
+    background-color: teal;
+    display: inline-block;
+    border-radius: 7px;
+    margin-right: 20px;
+    padding: 15px 15px 15px 5px;
+}
+
+/* Thess belongs to: sidebar and takes away style dots */
+#list_no_dots{
+    list-style-type: none;
+}
+
+/* Main Center Piece */
+#main_center{
+    width: 700px;
+    height: 675px;
+    background-color: black;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 7px;
+}
+#variable_dec{
+    display: inline-block;
+    width: 700
+}
+#variable_def{
+    display: inline-block;
+}
+#white_dots{
+    color: white;
+}
+/* Bottom Piece */
+#bottom_link{
+    width: 905px;
+    height: 40px;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+/* These belong to: bottom_link */
+#text_before_link{
+    display: inline-block;
+}
+#JavaScript_link{
+    display: inline-block;
+}

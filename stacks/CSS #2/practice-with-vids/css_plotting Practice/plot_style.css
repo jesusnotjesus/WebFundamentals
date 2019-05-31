@@ -1,0 +1,28 @@
+#container{
+    display: inline-block;
+    background-color: gold;
+}
+#block-1, #block-2, #block-3{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+#block-1{
+    background-color: green;
+    /* position: absolute;
+    top: 40px;*/
+}
+#block-2{
+    background-color: red;
+}
+#block-3{
+    background-color: blue;
+}
+
+/*
+    + static - positioned as coded
+    + absolute - takes out of normal doc flow and applies any other directional rules
+    + relative - applies realtive ot position it would have statically been. 
+    + fixed - realtive to the window (can scroll with)
+*/

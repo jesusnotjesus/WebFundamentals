@@ -1,0 +1,18 @@
+Jesus Ramos
+
+Basic Functions I:
+- 1 predicted output: 35 - correct
+- 2 predicted output: 8 - correct
+- 3 predicted output: 6 - correct
+- 4 predicted output: 3,9 - correct
+- 5 predicted output: 40,10 - incorrect
+- 6 predicted output: 4 - correct
+- 7 predicted output: (10,3), 30 - correct
+- 8 predicted output: 3,4 - correct
+- 9 predicted output: 2,5,8,11 - correct
+- 10 predicted output: 0,1,2,3,4,5,6,7,8,9,0 - incorrect
+- 11 predicted output: outputs literally nothing or undefined - correct
+- 12 predicted output: outputs literally nothing or undefined - correct
+- 13 predicted output: 10 - correct
+- 14 predicted output: 15,10 - correct
+- 15 predicted output: 15,15 - correct

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="dis_ninja_style.css">
+    <title>Disappearing Ninja</title>
+
+    <!-- JQuery Script will go Here: -->
+    <script>
+        $(document).ready(function(){
+
+            /* This fades imgs 1 - 8 */
+            $("#ninja1").click(function(){
+                $("#ninja1").fadeOut("slow");
+            })
+
+            $("#ninja2").click(function(){
+                $("#ninja2").fadeOut("slow");
+            })
+
+            $("#ninja3").click(function(){
+                $("#ninja3").fadeOut("slow");
+            })
+
+            $("#ninja4").click(function(){
+                $("#ninja4").fadeOut("slow");
+            })
+
+            $("#ninja5").click(function(){
+                $("#ninja5").fadeOut("slow");
+            })
+
+            $("#ninja6").click(function(){
+                $("#ninja6").fadeOut("slow");
+            })
+
+            $("#ninja7").click(function(){
+                $("#ninja7").fadeOut("slow");
+            })
+
+            $("#ninja8").click(function(){
+                $("#ninja8").fadeOut("slow");
+            })
+            /* This fades imgs 1 - 8 */
+
+            /* Makes images reappear */
+            $("#btn").click(function(){
+                $(".img_appear").show();
+            })
+            /* Makes images reappear */
+        });
+    </script>
+</head>
+<body>
+    <div class="main_block">
+        <!-- This will house the: label, top imgs, bottom imgs, and resotre button-->
+
+        <p id="top_label">jQuery - assignment 1</p>
+        <!-- This is the label that appears above the images-->
+
+        <div class="top_imgs">
+            <!-- This will hold the top images-->
+
+            <!-- These are the images that will be disappearing and reappearing-->
+            <img id="ninja1" class="img_appear" src="ninja.jpg" alt="picture of ninja" width="150" height="150">
+            <img id="ninja2" class="img_appear" src="ninja.jpg" alt="picture of ninja" width="150" height="150">
+            <img id="ninja3" class="img_appear" src="ninja.jpg" alt="picture of ninja" width="150" height="150">
+            <img id="ninja4" class="img_appear" src="ninja.jpg" alt="picture of ninja" width="150" height="150">
+        </div>
+
+        <div class="bottom_imgs">
+            <!-- This will hold the bottom images-->
+
+            <!-- These are the images that will be disappearing and reappearing-->
+            <img id="ninja5" class="img_appear" src="ninja.jpg" alt="picture of ninja" width="150" height="150">
+            <img id="ninja6" class="img_appear" src="ninja.jpg" alt="picture of ninja" width="150" height="150">
+            <img id="ninja7" class="img_appear" src="ninja.jpg" alt="picture of ninja" width="150" height="150">
+            <img id="ninja8" class="img_appear" src="ninja.jpg" alt="picture of ninja" width="150" height="150">
+        </div>
+
+        <button id="btn">Restore</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+    outline: 1px dotted red;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+.main_container{
+    width: 700px;
+    min-height: 1800px;
+}
+
+/* hold Block */
+.hold_block{
+    min-height: 100px;
+    background-color: greenyellow;
+}
+
+
+/* general classes: */
+    .action_butt{
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 30px;
+        vertical-align: top;
+    }
+    .action_list{
+        list-style: none;
+        margin-left: 40px;
+        margin-top: 15px;
+        width: 450px;
+        vertical-align: top;
+        display: inline-block;
+        
+    }
+    .action_list li{
+        display: inline-block;
+        margin-bottom: 3px;
+    }
+    .big_title{
+        font-size: 32px;
+        text-align: center;
+        margin-left: 120px;
+    }
+    .red_text{
+        color: red;
+    }
+/* general classes */
